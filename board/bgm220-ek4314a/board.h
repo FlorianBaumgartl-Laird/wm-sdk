@@ -20,6 +20,10 @@
 #define BOARD_USART_TX_PIN              5
 #define BOARD_USART_RX_PIN              6
 
+// VCOM port only supports 115200 baudrate
+// This speed will be used independently of UART_BAUDRATE flag value
+#define BOARD_USART_FORCE_BAUDRATE      115200
+
 // List of GPIO ports and pins for the LEDs on the board:
 #define BOARD_LED_PIN_LIST {{GPIO_PORTA, 4}}
 
